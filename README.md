@@ -1,0 +1,9 @@
+This code simulates DND 5E battles between a Solar and a Tarrasque (from the 2014 Monster Manual (the new one isn't out yet)) from DND lore using C++. It outputs the details and results of the battles in a terminal. There are 3 versions of the code:
+  - SolarVsTarrasque.cpp simulates one battle, turn-by-turn, between a RAW (Rules As Written, AKA "vanilla") Solar and a Tarrasque and outputs the results in a terminal.
+  - SolarVsTarrasqueWithBoulder.cpp simulates one battle, turn-by-turn, between a Solar and a Tarrasque with a homebrewed boulder-throw ranged attack from a giant and outputs the results in a terminal.
+  - SolarVsTarrasqueWithBoulder1Mil.cpp simulates 1 million battles (or whatever number of battles is set in the integer "numBattles" on line 321), between a Solar and a Tarrasque with a homebrewed boulder-throw ranged attack from a giant and outputs the results in a terminal. This version will print out the number of battles simulated up to the end (at intervals of 100,000 battles, or whatever int interval (line 322) is set as).
+
+A single Solar (https://www.dndbeyond.com/monsters/17016-solar) (CR 21) can kill a Tarrasque (https://www.dndbeyond.com/monsters/17034-tarrasque) very easily Rules As Written (RAW). Tarrasques RAW have no ranged attack, which means that a flying creature that can land ranged hits on a Tarrasque while hovering out of reach of the Tarrasques' attacks can kill a Tarrasque by themselves, though it would take 20-60 turns (I made a program in C++ that simulates this battle).
+
+Even if you were to homebrew and give the Tarrasque a boulder attack from a giant (4d10+10 bludgeoning, +10 to hit), the Solar still wins LITERALLY 99% of the time (I ran a sequence of 1 million simulations of this battle). The Tarrasque would need at least 2 homebrew boulder attacks per turn in order for the Tarrasques win count to even exceed 50% against the Solar.
+
